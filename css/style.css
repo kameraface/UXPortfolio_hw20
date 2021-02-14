@@ -3,6 +3,8 @@ body {
   font-family: 'Libre Baskerville', sans-serif;
   margin: 0 auto;
   max-width: 1290px;
+  position: relative;
+  z-index: 0;
 }
 h3 {
   font-family: 'Libre Baskerville', serif;
@@ -17,6 +19,16 @@ h2 {
   text-transform: uppercase;
   font-size: 20pt;
   color: #ffffff;
+}
+
+h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  max-width: 768px;
+  font-size:24px;
+  line-height: 31px;
+  padding: 16px;
+  color: black;
 }
 p {
   font-family: 'Libre Baskerville', serif;
@@ -42,6 +54,9 @@ button:hover {
   transform: translate(0px, -8px);
   transition: all 0.1s ease-in-out;
   
+}
+ul.a {
+  list-style-position: outside;
 }
 /* NAVIGATION FOR HEADER AND FOOTER */
 
@@ -155,13 +170,13 @@ button:hover {
 }
 
 /* My work */
-.myWork h1{
+#myWork h1{
   color: white;
   font-family: 'Roboto';
   justify-content: flex-start;
   padding-left: 0px;
 }
-.myWork {
+#myWork {
   padding: 32px;
   display: flex;
   align-self: flex-start;
@@ -182,13 +197,13 @@ button:hover {
   float: right;
   padding: 32px;
 }
-.myWork h4 {
+#myWork h4 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 26px;
 }
-.myWork p{
+#myWork p{
   padding: 0px 0 32px 0;
 }
 
@@ -292,6 +307,118 @@ button:hover {
 /* Media Query */
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    
   }
+}
+
+/* Case Study pages */
+#worknav li{
+  vertical-align: bottom;
+}
+#worknav li em{
+  color: white;
+  vertical-align: bottom;
+  padding: ;
+}
+.active {
+  color: #FFCC00;
+}
+#articleLinks{
+/*make this float along side of the case study as you scroll */
+  background-color: white;
+  width: fit-content;
+  padding-bottom: 32px;
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 64px;
+  clear: none;
+  border-radius: 8px;
+  }
+
+
+}
+#articleLinks h6{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #231F20;
+  font-size: 16px;
+  padding: 32px 32px 0px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#articleLinks a {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  max-width: 768px;
+  font-size:14px;
+  line-height: 31px;
+  padding: 0px 32px;
+  color: #231F20;
+}
+#articleLinks a:hover {
+  background-color: black;
+  color: #ffcc00;
+}
+#articleLinks a:active {
+  color: #ffcc00;
+}
+
+/* Introdction */
+#intro {
+  max-width: 100%;
+  color: white;
+  border: 1px #ffc000 solid;
+  padding: 32px;
+  float: right;
+  margin-left: 200px;
+}
+#intro p {
+  padding: 32px 0 32px;
+}
+.yella {
+    background-color: #ffcc00;
+    border-radius: 8px;
+}
+.yella p {
+  color: #231F20;
+}
+/* Research */
+#research {
+  max-width: 100%;
+  height: ;
+  color: white;
+  border: 1px #ffc000 solid;
+  padding: 64px;
+  margin-left: 200px;
+}
+#research p {
+  
+  padding: 32px 0 32px;
+}
+.aside {
+  background-color: #ffc000 !important;
+}
+#protoperson {
+  margin-left: 200px;
+}
+#solutions {
+  margin-left: 200px;
+
+}
+#mocks{
+  margin-left: 200px;
+
+}
+#prototype {
+  margin-left: 200px;
+
+}
+#guide {
+  margin-left: 200px;
+
+}
+#conclusion {
+  margin-left: 200px;
 }
